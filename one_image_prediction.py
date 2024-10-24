@@ -9,7 +9,7 @@ model = MobileNetV2(weights='imagenet')
 
 # Carregar uma imagem real para teste
 current_dir = os.path.dirname(os.path.abspath(__file__))
-img_path = os.path.join(current_dir, 'hulk.jpg')  # Substitua pelo nome da imagem escolhida
+img_path = os.path.join(current_dir, 'dog.jpg')  # Substitua pelo nome da imagem escolhida
 
 # Carregar e redimensionar a imagem para 224x224 pixels, que é o formato esperado pelo modelo
 img = image.load_img(img_path, target_size=(224, 224))
